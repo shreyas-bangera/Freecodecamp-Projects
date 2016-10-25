@@ -19,15 +19,16 @@
                     }
                     else
                     {
-                        $("#result").animate({'margin-top': '-8px'}, 500, "linear");
+                        //$("#result").animate({'margin-top': '-8px'}, 500, "linear");
                         $('#result').append('<div id="articles" class="well"><a class="title" id="alink" href="'+data[3][i]+'"target="_blank"><h3 class="text-center">' + data[1][i] + '</h3></a><p class="cont">' + data[2][i] + '</p></div>');
 
                     }
                 }
+                $("#articles").animate({'margin-top': '-238px'}, 400, "linear");
                 });
             }
     });
-
+        
     $('[data-toggle="tooltip"]').tooltip();
 
     $(".btn").click(function(){
